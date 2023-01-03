@@ -43,4 +43,4 @@ with col3:
         st.image("images/" + row["image"], width=300)
 
 with st.sidebar:
-    st.text("Main and About will go here")
+    st.text("")

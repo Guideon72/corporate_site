@@ -1,13 +1,14 @@
 import smtplib, ssl
+import os
 
 
 folio_host = "smtp.gmail.com"
 folio_port = 465
 
 # CONNECTION
-sender = "esDevmail72@gmail.com"
-portfolio_key = "eyirswehplooyrmb"
-receiver = "esDevmail72@gmail.com"
+sender = os.getenv("DEVEM")
+portfolio_key = os.getenv("EMKEY")
+receiver = os.getenv("DEVEM")
 folio_context = ssl.create_default_context()
 
 
